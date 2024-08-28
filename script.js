@@ -21,9 +21,6 @@ const users = [
 ];
 
 
-// 假设用户数据 (users) 已在其他地方定义
-
-// 生成卡片HTML
 function createCardHTML(user) {
     return `
         <div class="card-wrapper">
