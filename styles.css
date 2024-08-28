@@ -126,18 +126,31 @@ main {
     opacity: 1;
 }
 
-.card .image-placeholder {
-    display: none;
+.card .image-container {
     width: 200px;
     height: 200px;
-    background-color: #ddd;
     margin: 1rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.card .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.card .image-container .no-image-text {
     color: #666;
     font-size: 0.9em;
+}
+
+.card.expanded .image-container {
+    display: flex;
 }
 
 .card.expanded .image-placeholder {
