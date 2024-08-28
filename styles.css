@@ -1,0 +1,166 @@
+:root {
+    --main-purple: #82318E;
+    --light-purple: #A64CA6;
+    --white: #FFFFFF;
+    --male-color: #4169E1;
+    --female-color: #FF69B4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    color: #333;
+}
+
+header {
+    background-color: var(--main-purple);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--light-purple);
+    padding: 0.5rem;
+    overflow-x: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+.card-wrapper {
+    width: 250px;
+    margin: 1rem;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card.expanded {
+    position: absolute;
+    width: 250px;
+    max-width: calc(100vw - 4rem);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.card h3.male {
+    color: var(--male-color);
+}
+
+.card h3.female {
+    color: var(--female-color);
+}
+
+.card p {
+    margin: 0.5rem 0;
+}
+
+.card .details {
+    display: none;
+    font-size: 0.9em;
+    margin-top: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card.expanded .details {
+    display: block;
+    opacity: 1;
+}
+
+.card .image-placeholder {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.card.expanded .image-placeholder {
+    display: flex;
+}
+
+footer {
+    background-color: var(--main-purple);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .card-wrapper {
+        width: 100%;
+    }
+
+    .card.expanded {
+        width: calc(100vw - 2rem);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
