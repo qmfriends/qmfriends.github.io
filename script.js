@@ -25,7 +25,7 @@ function createCardHTML(user) {
 
     const imageContent = user.imageUrl
         ? `<img src="${user.imageUrl}" alt="${user.name}的图片" class="user-image">`
-        : `<div class="no-image-text">我是AI生成的哟</div>`;
+        : `<div class="no-image-text">我是AI生成的哟~</div>`;
 
     return `
         <div class="card-wrapper">
