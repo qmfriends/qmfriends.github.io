@@ -1,12 +1,12 @@
 const users = [
-    { name: "李策", gender: "male", department: "工设", grade: "2024级", research: "基于AI的复杂形态研究", interests: "看书，游戏", skills: "编程、AIGC、建筑设计", needs: "各种各样的有趣体验，用技术支持设计与艺术的合作机会", details: "建筑学出身，当过程序员、产品经理、大厂管理，现在专注于以技术支持设计与艺术，包括但不限于AI，参数化设计、机械臂、交互装置等等，追求多种多样的人生体验和“时间自由”", imageUrl: "imgs/lice.png" },
+    { name: "李策", gender: "male", department: "工设", grade: "2024级", research: "基于AI的复杂形态研究", interests: "看书，游戏", skills: "各类编程都会一点、AIGC、建筑设计", needs: "各种各样的有趣体验，用技术支持设计与艺术的合作机会", details: "建筑学出身，当过程序员、产品经理、大厂管理，现在专注于以技术支持设计与艺术，包括但不限于AI，参数化设计、机械臂、交互装置等等，追求多种多样的人生体验和“时间自由”", imageUrl: "imgs/lice.png" },
     { name: "李硕", gender: "male", department: "绘画", grade: "2024级", research: "中西方绘画及艺术生态", interests: "打游戏，羽毛球", skills: "通识类绘画技术交流（零基础）", needs: "学习增肌健身", details: "既是绘画爱好者，又是互联网打工人。想要慢生活，无事逛逛展，安东尼葛姆雷和保罗克利都可。" , imageUrl: "imgs/lishuo.jpg" },
     { name: "李潇鹏", gender: "male", department: "染服", grade: "2024级", research: "服装设计", interests: "围棋、足球、VR/AR技术", skills: "Clo 3D、人工智能", needs: "想了解服装与人工智能交叉的更多可能", details: "我是一个致力于推动服装设计创新的设计师，特别专注于探索趣味性与互动性相结合的设计应用。我坚信，通过跨学科的设计融合，我们能够彻底变革服装与纺织品的设计方式，使其更加灵动与富有生命力。", imageUrl: "imgs/lixiaopeng.jpg" },
     { name: "吴竟诚", gender: "male", department: "工美", grade: "2024级", research: "非写实漆画", interests: "摄影、旅游", skills: "漆工艺、ps", needs: "发文章、跨学科", details: "infj，平时热爱体育运动、看展、摄影、旅游等。专业上以创作漆画为主，作品较偏当代，探寻材料的综合性与画面的创新，突破传统的材料限制进行当代的理念创新。博士阶段的研究主要围绕装饰风格的漆画，将传统的平面性装饰与当代的表现语言相结合进行创作" , imageUrl: "imgs/wujingcheng.png" },
     { name: "刘培烨", gender: "male", department: "环艺", grade: "2024级", research: "环境行为心理学", interests: "看书，城市漫步，操场慢跑", skills: "数据量化，统计学分析，实证研究实验", needs: "有趣活动的搭子，环境研究的讨论小伙伴，脱单", details: "建筑学背景的INTJ，经历了从艺术生到科研狗的困顿与迷茫，对科学研究范式、SCI文章发表有些许经验，科研方面有问题可以随时滴滴，知无不言。也欢迎大家介绍对象给我～", imageUrl: "imgs/liupeiye.jpg" },
     { name: "万田良", gender: "male", department: "工设", grade: "2024级", research: "智能移动、产品服务与创新", interests: "民篮球（从小打球🏀）、深潜（国际潜水SSI一级潜水员）、健身（清华北体5-6点约练！）、做饭、画画（画的不好但爱画哈哈哈）", skills: "blender、ps、alias、stable diffusion、油泥模型", needs: "学术交流、发文章、跨学科、交叉学科", details: "ENFJ 虽然是E人，但有时候还是很害羞的，请多多关照！", imageUrl: "imgs/wantianliang.jpg" },
     { name: "何为", gender: "male", department: "视传", grade: "2024级", research: "传统文化视觉要素的当代语境转译与数字化传播", interests: "网球、也可以打打羽毛球、健身", skills: " ", needs: "认识聪明智慧且有能力的好朋友，特别是技术领域专业人才探讨一些问题", details: "策展人、数字艺术家、曾担任国内外文化项目制作人和艺术指导。" , imageUrl: "imgs/hewei.jpg"},
-    { name: "周丽", gender: "female", department: "纯艺", grade: "2023级", research: "数字绘画", interests: "传统国画、新媒体艺术", skills: "数字绘画软件、传统绘画技法", needs: "寻找对AI辅助创作感兴趣的同学", details: "我的研究重点是探索人工智能辅助创作在传统国画中的应用，寻求传统与现代的融合。我正在开发一种AI系统，它能够学习传统国画的笔法和构图，辅助艺术家创作出兼具传统韵味和现代特色的作品。" },
+    { name: "杜心恬", gender: "female", department: "环艺", grade: "2024级", research: "建筑园林史、美术考古", interests: "唱歌、阅读、书法", skills: "历史古文献查阅、中国古建筑", needs: "寻求研究中国古建筑、古典园林、宗教美术考古方面的志友", details: "主要研究建筑园林史、美术考古方向。发表过北核，致力于中国传统文化领域的学习和探索。" },
     { name: "吴刚", gender: "male", department: "雕塑", grade: "2021级", research: "公共艺术", interests: "城市规划、社会学", skills: "大型雕塑制作、3D建模", needs: "寻找对城市美化项目感兴趣的合作伙伴", details: "我致力于创作能够与城市环境互动的大型公共雕塑，探索艺术如何改善城市生活质量。我正在研究如何将环境感知技术融入雕塑中，使作品能够根据周围环境的变化而改变，创造出动态的城市艺术体验。" },
     { name: "郑萍", gender: "female", department: "史论", grade: "2022级", research: "当代艺术批评", interests: "艺术哲学、新媒体理论", skills: "艺术评论写作、数据分析", needs: "寻找对数字时代艺术传播感兴趣的同学", details: "我的研究聚焦于解析当代艺术在社交媒体时代的传播与接受机制，探讨数字化对艺术批评的影响。我正在开发一个在线平台，旨在促进艺术家、评论家和观众之间的互动，重新定义数字时代的艺术批评。" },
     { name: "黄磊", gender: "male", department: "染服", grade: "2023级", research: "生物材料纺织", interests: "生物学、可持续时尚", skills: "生物材料研究、纺织工艺", needs: "寻找对环保面料感兴趣的设计师合作", details: "我正在研究如何利用生物材料（如藻类、菌丝体）开发新型纺织品。这项研究不仅有助于减少传统纺织业的环境污染，还可能带来全新的面料质感和功能。我希望能将这些创新材料应用于时装设计，推动可持续时尚的发展。" },
@@ -25,7 +25,7 @@ function createCardHTML(user) {
 
     const imageContent = user.imageUrl
         ? `<img src="${user.imageUrl}" alt="${user.name}的图片" class="user-image">`
-        : `<div class="no-image-text">我是AI生成的哟~</div>`;
+        : `<div class="no-image-text">暂无图片/AI人物</div>`;
 
     return `
         <div class="card-wrapper">
