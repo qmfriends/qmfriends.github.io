@@ -15,28 +15,50 @@
         <h2>免责声明：本网站内容为公开自由提交，提交资料默认为可公开，站长仅作初步审核，联系时请自行甄别信息的真实性。</h2>
     </header>
     <nav>
-        <ul id="filters">
-            <li><a href="#" data-filter="all" class="active">全部</a></li>
-            <li><a href="#" data-filter="染服">染服</a></li>
-            <li><a href="#" data-filter="陶瓷">陶瓷</a></li>
-            <li><a href="#" data-filter="视传">视传</a></li>
-            <li><a href="#" data-filter="环艺">环艺</a></li>
-            <li><a href="#" data-filter="工设">工设</a></li>
-            <li><a href="#" data-filter="工美">工美</a></li>
-            <li><a href="#" data-filter="信息">信息</a></li>
-            <li><a href="#" data-filter="绘画">绘画</a></li>
-            <li><a href="#" data-filter="雕塑">雕塑</a></li>
-            <li><a href="#" data-filter="史论">史论</a></li>
+        <ul id="main-nav">
+            <li><a href="#" data-section="users" class="active">用户</a></li>
+            <li><a href="#" data-section="activities">活动</a></li>
         </ul>
     </nav>
     <main>
-        <div class="card-container">
-            <!-- 卡片内容将通过JavaScript动态生成 -->
-        </div>
+        <section id="users-section">
+            <nav>
+                <ul id="user-filters">
+                    <li><a href="#" data-filter="all" class="active">全部</a></li>
+                    <li><a href="#" data-filter="染服">染服</a></li>
+                    <li><a href="#" data-filter="陶瓷">陶瓷</a></li>
+                    <li><a href="#" data-filter="视传">视传</a></li>
+                    <li><a href="#" data-filter="环艺">环艺</a></li>
+                    <li><a href="#" data-filter="工设">工设</a></li>
+                    <li><a href="#" data-filter="工美">工美</a></li>
+                    <li><a href="#" data-filter="信息">信息</a></li>
+                    <li><a href="#" data-filter="绘画">绘画</a></li>
+                    <li><a href="#" data-filter="雕塑">雕塑</a></li>
+                    <li><a href="#" data-filter="史论">史论</a></li>
+                </ul>
+            </nav>
+            <div class="card-container" id="user-cards">
+                <!-- 用户卡片内容将通过JavaScript动态生成 -->
+            </div>
+        </section>
+        <section id="activities-section" style="display: none;">
+            <nav>
+                <ul id="activity-filters">
+                    <li><a href="#" data-filter="all" class="active">全部</a></li>
+                    <li><a href="#" data-filter="讲座">讲座</a></li>
+                    <li><a href="#" data-filter="工作坊">工作坊</a></li>
+                    <li><a href="#" data-filter="展览">展览</a></li>
+                    <li><a href="#" data-filter="聚会">聚会</a></li>
+                    <li><a href="#" data-filter="研讨会">研讨会</a></li>
+                </ul>
+            </nav>
+            <div class="card-container" id="activity-cards">
+                <!-- 活动卡片内容将通过JavaScript动态生成 -->
+            </div>
+        </section>
     </main>
     <footer>
         <p>免责声明：本网站内容为公开自由提交，联系时请自行甄别信息的真实性。</p>
     </footer>
-    
 </body>
 </html>
